@@ -1,6 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const config = require('./src/config/config');
+const config = require('./src/Helpers/config');
 
 module.exports = {
     mode: 'development',
@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: 'src/index.html'
+            template: 'public/index.html'
         })
     ],
     module: {
@@ -32,8 +32,7 @@ module.exports = {
             },
             { test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpe?g)$/, loader: 'url-loader?limit=100000' },
         ]
-    }
-,
+    },
     devServer: {
         port: config.port
     }
