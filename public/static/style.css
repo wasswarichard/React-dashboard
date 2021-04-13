@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-@import url("navigation.css");
+/*@import url("navigation.css");*/
 :root {
-    --main-color: #343225;
+    --main-color: #1b4053;
     --color-dark: #1D2231;
     --text-grey: #a49d9d
 }
